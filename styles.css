@@ -21,7 +21,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 30%;
+    width: 40%;
     background-color: #12181f;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ body {
 
 /* Main Content */
 .content {
-    width: 70%;
+    width: 60%;
     padding: 40px;
 }
 
