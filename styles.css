@@ -1,26 +1,86 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
 }
 
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #0d1117; /* Dark theme */
+    color: white;
+}
+
+/* Layout */
 .container {
     display: flex;
-    height: 100vh; /* Full height of the screen */
+    width: 100%;
 }
 
-.left {
-    width: 40%; /* 2/5 of the screen */
-    background-color: lightblue;
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background-color: #12181f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    text-align: center;
 }
 
-.right {
-    width: 60%; /* 3/5 of the screen */
-    background-color: lightcoral;
-    padding: 20px;
+.sidebar img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+}
+
+.icons img {
+    width: 30px;
+    margin: 10px;
+}
+
+/* Main Content */
+.content {
+    width: 70%;
+    padding: 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.intro h2 {
+    font-size: 2em;
+}
+
+.education h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
 }
