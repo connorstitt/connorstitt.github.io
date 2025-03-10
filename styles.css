@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the screen */
+}
+
+.left {
+    width: 33.33%; /* 1/3 of the screen */
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.right {
+    width: 66.67%; /* 2/3 of the screen */
+    background-color: lightcoral;
+    padding: 20px;
+}
