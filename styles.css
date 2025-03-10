@@ -14,13 +14,13 @@ body {
 }
 
 .left {
-    width: 40%;
+    width: 40%; /* 2/5 of the screen */
     background-color: lightblue;
     padding: 20px;
 }
 
 .right {
-    width: 60%;
+    width: 60%; /* 3/5 of the screen */
     background-color: lightcoral;
     padding: 20px;
 }
